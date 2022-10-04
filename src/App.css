@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  background-color: #7952B3 !important;
 }
+.navbar a{
+  font-size: 18px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.nav-link{
+  color: rgb(19, 19, 19) !important;
+}
+.error-page{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.error{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.error h1{
+  font-size: 4rem;
+}
+.error p{
+  font-size: 20px;
+}
+.hero{
+  width: 100%;
+  position: relative;
+  height: 560px;
+}
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+.hero-banner{
+  min-height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+}
+.hero-banner h2{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.hero-banner button{
+  color: white;
+}
+.hero-banner button{
+  color: white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-aria{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(121, 121, 121, 0.096);
+  padding: 16px 0;
+}
+.footer-aria p{
+  padding: 0 ;
+  margin: 0;
+  color: rgb(170, 170, 170);
+}
+
+
+.product-bg{
+  background:
+  linear-gradient(to bottom, rgb(62 62 62), rgb(30 30 30 / 73%)),
+  url(https://thumbs.dreamstime.com/b/online-shopping-concept-banner-pink-background-store-women-smart-phone-screen-over-copy-space-web-top-view-173575834.jpg);
+  width: 100%;
+  height: 200px;
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.product-bg h1{
+  color: rgb(235, 235, 235);
+  
+}
+
+.cart-wapper{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.span{
+  font-size: 2rem;
+  font-weight: normal;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.span:hover{
+  color: gray;
+}
+.title{
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.text-sz{
+  font-size: 1rem !important;
+  padding: 5px 2px !important;
+  margin: 0 !important;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+}
+.subtotal{
+  margin-top: 10px;
+}
+.single-prod-img{
+  transition: 0.3s ease;
+}
+.single-prod-img:hover{
+transform: scale(1.2);
+}
+.card-img-top{
+  transition: 0.3s ease;
+}
+.card-img-top:hover{
+  transform: scale(1.1);
+}
+.emtyCart{
+  /* height: 88vh; */
+}
+
+.cart-wrapper{
+  min-height: 80vh;
+}
+
+.login-page{
+  width: 40%;
+  margin: auto;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+form{
+  background-color: rgb(241, 241, 241);
+  padding: 20px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+.contact-page{
+  width: 50%;
+  margin: auto;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+body{
+  background-color: rgba(218, 217, 217, 0.568) !important;
+}
+
+.navbar{
+  position: sticky !important;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.grid-box{
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  gap: 3px;
+}
+
+
+.header{
+  background-color: #7952B3;
+  grid-column: 1/-1;
+  padding: 10px;
+}
+.menu{
+  background-color: rgb(60, 97, 18);
+}
+.content{
+  background-color: rgb(32, 32, 255);
+}
+.body{
+  background-color: green;
+}
+.footers{
+  background-color: rgb(238, 30, 210);
 }
